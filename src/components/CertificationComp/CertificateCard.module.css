@@ -1,0 +1,75 @@
+.card_container {
+  width: 500px;
+  height: 410px;
+  background: white;
+  overflow: hidden;
+  border-radius: 1.3rem;
+  margin: 4rem 4rem 11rem 4rem;
+  transition: all 0.5s ease-in-out;
+  /* box-shadow: 1px 1px 15px gray; */
+  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+}
+
+.card_container:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.certificate_title {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2.3rem 0rem;
+}
+
+.buttons {
+  margin: 0rem auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  padding-bottom: 10px;
+}
+
+.buttons .like {
+  all: none;
+  text-decoration: none;
+  font-size: 2.3rem;
+  border: 2px #048cbd solid;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  background: transparent;
+}
+
+.buttons .like:hover {
+  color: white;
+  background: #048cbd;
+}
+
+.buttons .view {
+  all: none;
+  text-decoration: none;
+  font-size: 2.5rem;
+  border: 2px #048cbd solid;
+  padding: 0.2rem 1rem;
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  background: transparent;
+}
+
+.buttons .view:hover {
+  color: white;
+  background: #048cbd;
+}
