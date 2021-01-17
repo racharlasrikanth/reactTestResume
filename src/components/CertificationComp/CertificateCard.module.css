@@ -73,3 +73,20 @@
   color: white;
   background: #048cbd;
 }
+
+@media screen and (max-width: 600px) {
+  .buttons {
+    margin: 0rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding-bottom: 5px;
+  }
+
+  .certificate_title {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 0.5rem;
+  }
+}
