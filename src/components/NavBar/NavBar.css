@@ -28,6 +28,7 @@ nav .logo h1 {
   cursor: pointer;
   transition: all 0.3s ease-in;
   z-index: 1;
+  user-select: none;
 }
 
 nav .logo h1:hover {
@@ -54,6 +55,7 @@ nav .nav-links ul li a {
   transition: all 0.5s ease-in-out;
   /* border: 1px solid rgba(255, 111, 0, 0.453); */
   border: 1px solid #048cbd93;
+  user-select: none;
 }
 
 nav .nav-links ul li a:hover {
@@ -72,14 +74,15 @@ nav .nav-links ul li a.same_link {
   display: inline-block;
   cursor: pointer;
   display: none;
+  user-select: none;
 }
 
 .bar1,
 .bar2,
 .bar3 {
-  width: 35px;
+  width: 30px;
   height: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.72);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -171,5 +174,30 @@ nav .nav-links ul li a.same_link {
   nav .nav-links ul.active {
     left: 0%;
     opacity: 1;
+  }
+
+  nav .nav-links ul li a,
+  nav .nav-links ul li a:hover {
+    border: none;
+    background: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    /* padding: 0rem ; */
+  }
+
+  nav .nav-links ul li {
+    all: none;
+    background: #048cbd;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0.5rem 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    user-select: none;
   }
 }
