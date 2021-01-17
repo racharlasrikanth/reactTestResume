@@ -40,11 +40,11 @@
 
 @media screen and (max-width: 600px) {
   .certification_heading {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #048cbd;
     width: 100%;
+    padding: none;
     text-align: center;
     overflow: hidden;
-    text-overflow: ellipsis;
   }
 }

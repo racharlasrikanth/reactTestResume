@@ -1,6 +1,6 @@
 .card_container {
-  width: 500px;
-  min-height: 410px;
+  width: 380px;
+  min-height: 340px;
   background: white;
   overflow: hidden;
   border-radius: 1.3rem;
@@ -42,7 +42,7 @@
   padding-bottom: 10px;
 }
 
-.buttons .like {
+/* .buttons .like {
   all: none;
   text-decoration: none;
   font-size: 2.3rem;
@@ -56,6 +56,33 @@
 .buttons .like:hover {
   color: white;
   background: #048cbd;
+} */
+
+.buttons .like {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
+  /* border: 1px red solid; */
+  padding: 0.2rem 0.3rem;
+  overflow: hidden;
+}
+
+.buttons .like .love {
+  all: none;
+  width: 45px;
+  user-select: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons .like .love:hover {
+  transform: scale(1.3);
+}
+
+.buttons .like .count {
+  font-size: 2.3rem;
+  user-select: none;
+  cursor: text;
 }
 
 .buttons .view {
