@@ -1,4 +1,4 @@
-.navbar-container {
+.navbar_container {
   width: 100%;
   min-height: 10vh;
   background: rgb(42, 42, 42);
@@ -35,17 +35,17 @@ nav .logo h1:hover {
   color: rgb(255, 102, 0);
 }
 
-nav .nav-links ul {
+nav .nav_links ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-nav .nav-links ul li {
+nav .nav_links ul li {
   padding: 0rem 2rem;
 }
 
-nav .nav-links ul li a {
+nav .nav_links ul li a {
   font-size: 2rem;
   /* color: white; */
   padding: 0.7rem 2rem;
@@ -58,14 +58,14 @@ nav .nav-links ul li a {
   user-select: none;
 }
 
-nav .nav-links ul li a:hover {
+nav .nav_links ul li a:hover {
   /* background: rgb(255, 102, 0); */
   background: #048cbd;
   color: white;
   text-shadow: 0px 0px 1.7px white;
 }
 
-nav .nav-links ul li a.same_link {
+nav .nav_links ul li a.same_link {
   background: rgb(255, 102, 0);
   color: white;
 }
@@ -117,7 +117,7 @@ nav .nav-links ul li a.same_link {
     display: block;
     z-index: 1;
   }
-  nav .nav-links ul {
+  nav .nav_links ul {
     position: absolute;
     top: 0%;
     left: -100%;
@@ -133,7 +133,7 @@ nav .nav-links ul li a.same_link {
     transition: all 0.5s ease;
     opacity: 0;
   }
-  nav .nav-links ul.active {
+  nav .nav_links ul.active {
     left: 0%;
     opacity: 1;
   }
@@ -155,7 +155,7 @@ nav .nav-links ul li a.same_link {
     display: block;
     z-index: 1;
   }
-  nav .nav-links ul {
+  nav .nav_links ul {
     position: absolute;
     top: 0%;
     left: -100%;
@@ -167,17 +167,17 @@ nav .nav-links ul li a.same_link {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    padding: 25rem 0rem;
+    padding: 15rem 0rem;
     transition: all 0.5s ease;
     opacity: 0;
   }
-  nav .nav-links ul.active {
+  nav .nav_links ul.active {
     left: 0%;
     opacity: 1;
   }
 
-  nav .nav-links ul li a,
-  nav .nav-links ul li a:hover {
+  nav .nav_links ul li a,
+  nav .nav_links ul li a:hover {
     border: none;
     background: none;
     display: block;
@@ -186,7 +186,7 @@ nav .nav-links ul li a.same_link {
     /* padding: 0rem ; */
   }
 
-  nav .nav-links ul li {
+  nav .nav_links ul li {
     all: none;
     background: #048cbd;
     width: 70%;

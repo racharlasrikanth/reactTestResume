@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./NavBar.css";
+import NavBarStyles from "./NavBar.module.css";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -10,13 +10,13 @@ const NavBar = () => {
   };
 
   return (
-    <div className="navbar-container">
-      <nav className="navbar">
-        <div className="logo">
+    <div className={NavBarStyles.navbar_container}>
+      <nav className={NavBarStyles.navbar}>
+        <div className={NavBarStyles.logo}>
           <h1>Srikanth</h1>
         </div>
-        <div className="nav-links">
-          <ul className={`${burgerAnimation ? "active" : ""}`}>
+        <div className={NavBarStyles.nav_links}>
+          <ul className={`${burgerAnimation ? NavBarStyles.active : ""}`}>
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -32,12 +32,14 @@ const NavBar = () => {
           </ul>
         </div>
         <div
-          className={`burger ${burgerAnimation ? "changeBurger" : ""}`}
+          className={`${NavBarStyles.burger} ${
+            burgerAnimation ? NavBarStyles.changeBurger : ""
+          }`}
           onClick={burgerChangeHandler}
         >
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
+          <div className={NavBarStyles.bar1}></div>
+          <div className={NavBarStyles.bar2}></div>
+          <div className={NavBarStyles.bar3}></div>
         </div>
       </nav>
     </div>
