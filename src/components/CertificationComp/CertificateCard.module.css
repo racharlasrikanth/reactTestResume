@@ -75,7 +75,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.buttons .like .love:hover {
+.buttons .like .love:active {
   transform: scale(1.3);
 }
 
