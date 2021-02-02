@@ -116,4 +116,13 @@
     text-align: center;
     padding: 3rem 0.5rem;
   }
+
+  .card_container {
+    box-shadow: 1px 1px 5px gray;
+  }
+
+  .card_container:hover {
+    transform: scale(1);
+    cursor: pointer;
+  }
 }
