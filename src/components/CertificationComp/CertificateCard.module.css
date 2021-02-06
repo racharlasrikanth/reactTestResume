@@ -6,9 +6,10 @@
   border-radius: 1.3rem;
   margin: 4rem 4rem 11rem 4rem;
   transition: all 0.5s ease-in-out;
+  box-shadow: 1px 1px 5px gray;
   /* box-shadow: 1px 1px 15px gray; */
-  box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
-    -12px -12px 24px 0 rgba(255, 255, 255, 0.5);
+  /* box-shadow: 12px 12px 24px 0 rgba(0, 0, 0, 0.2),
+    -12px -12px 24px 0 rgba(255, 255, 255, 0.5); */
 }
 
 .card_container:hover {
