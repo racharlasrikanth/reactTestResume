@@ -75,10 +75,15 @@
 
 .buttons .like .love {
   all: none;
-  width: 45px;
+  width: 40px;
   user-select: none;
   transition: all 0.3s ease-in-out;
   pointer-events: all;
+  opacity: 0.9;
+}
+
+.buttons .like .love:hover {
+  opacity: 1;
 }
 
 .buttons .like .love:active {
