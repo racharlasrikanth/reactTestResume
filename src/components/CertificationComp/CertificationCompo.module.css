@@ -32,7 +32,8 @@
 .card_container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  padding-left: 50px;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   min-height: 70%;
@@ -46,5 +47,14 @@
     padding: none;
     text-align: center;
     overflow: hidden;
+  }
+  .card_container {
+    width: 100%;
+    display: flex;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 70%;
   }
 }

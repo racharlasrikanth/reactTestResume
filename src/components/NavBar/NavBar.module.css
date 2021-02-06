@@ -19,7 +19,7 @@ nav {
   align-items: center;
 }
 
-nav .logo h1 {
+nav .logo h1 a {
   color: white;
   font-size: 4rem;
   text-transform: capitalize;
@@ -29,10 +29,11 @@ nav .logo h1 {
   transition: all 0.3s ease-in;
   z-index: 1;
   user-select: none;
+  opacity: 0.7;
 }
 
-nav .logo h1:hover {
-  color: rgb(255, 102, 0);
+nav .logo h1 a:hover {
+  opacity: 1;
 }
 
 nav .nav_links ul {
@@ -54,7 +55,7 @@ nav .nav_links ul li a {
   color: rgba(255, 255, 255, 0.815);
   transition: all 0.5s ease-in-out;
   /* border: 1px solid rgba(255, 111, 0, 0.453); */
-  border: 1px solid #048cbd93;
+  border: 1px solid #048cbd2f;
   user-select: none;
 }
 

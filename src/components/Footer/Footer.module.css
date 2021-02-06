@@ -16,10 +16,16 @@
   align-items: center;
 }
 
-.footer_name {
+.footer_name a {
   font-size: 3rem;
   cursor: pointer;
   color: white;
+  color: white;
+  opacity: 0.7;
+}
+
+.footer_name a:hover {
+  opacity: 1;
 }
 
 .footer_links {
@@ -111,7 +117,7 @@
     z-index: 1;
   }
 
-  .footer_name {
+  .footer_name a {
     font-size: 2.5rem;
   }
 
@@ -132,7 +138,7 @@
     padding-right: 0;
   }
 
-  .footer_name {
+  .footer_name a {
     padding-left: 1.3rem;
   }
 }

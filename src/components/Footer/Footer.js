@@ -9,7 +9,9 @@ const Footer = () => {
   return (
     <div className={FooterStyles.footer_container}>
       <div className={FooterStyles.footer}>
-        <div className={FooterStyles.footer_name}>Srikanth</div>
+        <div className={FooterStyles.footer_name}>
+          <a href="#home">Srikanth</a>
+        </div>
         <div className={FooterStyles.footer_links}>
           <ul>
             <li title="Click here for YouTube Channel">

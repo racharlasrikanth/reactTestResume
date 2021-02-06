@@ -11,7 +11,7 @@ const CertificateCard = ({ name, id, badge, viewCertificate }) => {
   };
 
   return (
-    <div className={CardStyles.card_container}>
+    <div id="certifications" className={CardStyles.card_container}>
       <div className={CardStyles.card}>
         <img src={badge} alt="Badge" />
         <div className={CardStyles.certificate_title}>{name}</div>

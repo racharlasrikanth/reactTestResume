@@ -13,21 +13,23 @@ const NavBar = () => {
     <div className={NavBarStyles.navbar_container}>
       <nav className={NavBarStyles.navbar}>
         <div className={NavBarStyles.logo}>
-          <h1>Srikanth</h1>
+          <h1>
+            <a href="#home">Srikanth</a>
+          </h1>
         </div>
         <div className={NavBarStyles.nav_links}>
           <ul className={`${burgerAnimation ? NavBarStyles.active : ""}`}>
             <li>
-              <Link to="/">Home</Link>
+              <a href="#home">Home</a>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <a href="#about">About</a>
             </li>
             <li>
-              <Link to="/projects">Projects</Link>
+              <a href="#projects">Projects</a>
             </li>
             <li>
-              <Link to="/certifications">Certifications</Link>
+              <a href="#certifications">Certifications</a>
             </li>
           </ul>
         </div>
