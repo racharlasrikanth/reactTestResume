@@ -1,0 +1,166 @@
+.about_container {
+  width: 100%;
+  min-height: 100vh;
+  /* background: url("./marek-piwnicki-cJ1jlSXZaR8-unsplash.jpg"); */
+  background: url("https://images.unsplash.com/photo-1553267071-904e5614583b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.727);
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.about_page {
+  width: 80%;
+  height: 70vh;
+  background: rgba(53, 52, 52, 0.466);
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about_left_side {
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+  /* background: lightcoral; */
+  cursor: pointer;
+}
+
+.about_left_side img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.about_right_side {
+  width: 60%;
+  height: 100%;
+  /* padding: 20px; */
+}
+
+.about_right_side .content {
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.about_right_side .content .title_about {
+  color: white;
+  margin: 50px 0px;
+  font-size: 3.5rem;
+  text-decoration: underline;
+  text-shadow: 1px 1px 3px gray;
+}
+
+.about_right_side .content .small_intro {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.about_right_side .content .contact_me {
+  color: white;
+  margin: 55px 0px 30px 0px;
+  font-size: 3.5rem;
+}
+
+.about_right_side .content input {
+  color: white;
+  width: 50%;
+  padding: 1rem;
+  margin: 10px 0px;
+  font-size: 2.5rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0px 0px 7px 3px transparent;
+}
+
+.about_right_side .content input:focus {
+  box-shadow: 0px 0px 7px 3px #048cbd;
+}
+
+.about_right_side .content .submit_button {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 2.7rem;
+  color: white;
+  background: #048cbd;
+  border-radius: 5px;
+  margin: 20px 0px 10px 0px;
+  cursor: pointer;
+  width: 50%;
+  transition: all 0.2s ease-in-out;
+  border: 1px solid #048cbd;
+}
+
+.about_right_side .content .submit_button:hover {
+  background: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .about_page {
+    width: 100%;
+    min-height: 100vh;
+    background: none;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about_page .about_left_side {
+    display: none;
+  }
+
+  .about_page .about_right_side {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .about_page .about_right_side .content {
+    width: 100%;
+  }
+
+  .about_page .about_right_side .content .small_intro {
+    width: 100%;
+    font-size: 2.3rem;
+  }
+
+  .about_page .about_right_side .content input {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .about_page .about_right_side .content .submit_button {
+    width: 100%;
+    font-size: 2rem;
+  }
+}

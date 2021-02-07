@@ -1,4 +1,5 @@
 import React from "react";
+import About from "../../components/AboutComp/About";
 import CertificationComp from "../../components/CertificationComp/CertificationComp";
 import Footer from "../../components/Footer/Footer";
 import HeroComp from "../../components/HeroComp/HeroComp";
@@ -9,6 +10,7 @@ const SinglePageApp = () => {
     <div>
       <NavBar />
       <HeroComp />
+      <About />
       <CertificationComp />
       <Footer />
     </div>
