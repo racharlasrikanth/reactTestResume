@@ -4,13 +4,35 @@ import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [burgerAnimation, setburgerAnimation] = useState(false);
+  const [navBarScroll, setNavBarScroll] = useState(false);
 
   const burgerChangeHandler = () => {
     setburgerAnimation(!burgerAnimation);
   };
 
+  const navBarScrollHandler = () => {
+    let flag = false;
+    if (window.scrollY > 300) {
+      flag = true;
+      setNavBarScroll(flag);
+    } else {
+      flag = false;
+      setNavBarScroll(flag);
+    }
+    return flag;
+  };
+
+  window.addEventListener("scroll", navBarScrollHandler);
+
   return (
-    <div className={NavBarStyles.navbar_container}>
+    <div
+      onScroll={navBarScrollHandler}
+      className={
+        navBarScroll
+          ? NavBarStyles.navbar_container_scroll
+          : NavBarStyles.navbar_container
+      }
+    >
       <nav className={NavBarStyles.navbar}>
         <div className={NavBarStyles.logo}>
           <h1>

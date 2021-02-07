@@ -11,6 +11,20 @@
   left: 0%;
 }
 
+.navbar_container_scroll {
+  width: 100%;
+  min-height: 10vh;
+  background: rgba(45, 40, 40, 0.789);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  top: 0%;
+  left: 0%;
+  font-weight: bold;
+}
+
 nav {
   width: 90%;
   height: 100%;
