@@ -50,6 +50,7 @@
   border-radius: 10px;
   user-select: none;
   pointer-events: none;
+  filter: brightness(77%);
 }
 
 .about_right_side {
