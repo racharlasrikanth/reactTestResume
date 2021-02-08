@@ -44,13 +44,31 @@
   cursor: pointer;
 }
 
+.about_left_side .image_wrapper {
+  max-width: 90%;
+  max-height: 100%;
+  border-radius: 10px;
+  user-select: none;
+  /* pointer-events: none; */
+  filter: brightness(77%);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
 .about_left_side img {
   max-width: 100%;
   max-height: 100%;
   border-radius: 10px;
   user-select: none;
-  pointer-events: none;
+  /* pointer-events: none; */
   filter: brightness(77%);
+  transition: all 0.5s ease-in-out;
+}
+
+.about_left_side img:hover {
+  -webkit-user-drag: none;
+  transform: scale(1.1);
+  filter: brightness(85%);
 }
 
 .about_right_side {

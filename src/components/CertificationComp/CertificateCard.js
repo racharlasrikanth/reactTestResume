@@ -13,7 +13,9 @@ const CertificateCard = ({ name, id, badge, viewCertificate }) => {
   return (
     <div id="certifications" className={CardStyles.card_container}>
       <div className={CardStyles.card}>
-        <img src={badge} alt="Badge" />
+        <div className={CardStyles.image_wrapper}>
+          <img className={CardStyles.main_image} src={badge} alt="Badge" />
+        </div>
         <div className={CardStyles.certificate_title}>{name}</div>
         <div className={CardStyles.buttons}>
           <Link className={CardStyles.like}>

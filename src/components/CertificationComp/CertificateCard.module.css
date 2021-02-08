@@ -27,7 +27,22 @@
 .card img {
   width: 100%;
   object-fit: cover;
-  pointer-events: none;
+  /* pointer-events: none; */
+  transition: all 0.5s ease-in-out;
+}
+
+.image_wrapper {
+  width: 100%;
+  object-fit: cover;
+  /* pointer-events: none; */
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.main_image:hover {
+  transform: scale(1.15);
+  filter: brightness(77%);
+  -webkit-user-drag: none;
 }
 
 .certificate_title {
