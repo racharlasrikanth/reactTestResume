@@ -15,6 +15,7 @@
 .card_container:hover {
   transform: scale(1.05);
   cursor: pointer;
+  background: rgb(247, 247, 247);
 }
 
 .card {
@@ -40,7 +41,7 @@
 }
 
 .main_image:hover {
-  transform: scale(1.15);
+  transform: scale(1.15) rotate(-7deg);
   filter: brightness(77%);
   -webkit-user-drag: none;
 }
